@@ -1,4 +1,4 @@
-# Data Model and ETL Documentation
+# Task 2: Data Model and ETL Documentation
 
 This document describes the main tables and ETL logic for the Money In data pipeline.  
 It includes table definitions, sample data, and explanations for each component.
