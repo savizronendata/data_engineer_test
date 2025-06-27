@@ -164,7 +164,6 @@ CREATE TABLE Fact_Money_In (
 **Overview:**  
 The ETL process for populating `Fact_Money_In` involves:
 - Selecting the latest version of each transaction from both `Account_MoneyIn` and `Card_MoneyIn`
-- Optionally joining with extended transaction details (if available)
 - Converting all amounts to USD using the latest available exchange rate
 - Inserting or updating the fact table
 
