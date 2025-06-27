@@ -86,8 +86,15 @@ INSERT INTO Account_MoneyIn (TransactionID, CustomerID, TransactionDate, Currenc
 **Purpose:**  
 Logs incoming money transactions made via card payments.
 
-**Columns:**  
-(Same as `Account_MoneyIn`)
+**Columns:**
+- `TransactionID`: Unique transaction identifier.
+- `CustomerID`: Customer receiving the money.
+- `TransactionDate`: Date of the transaction.
+- `Currency`: Transaction currency.
+- `Amount`: Amount received.
+- `CompanyID`: Associated company.
+- `CompanyCategory`: Company type/category.
+- `UpdateDate`: Last update date for the record.
 
 ```sql
 DROP TABLE IF EXISTS Card_MoneyIn;
