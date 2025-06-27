@@ -216,7 +216,7 @@ SELECT
    m.*,
    e.TransactionMehtod,
    e.In_fee,
-   GREATEST(m.LastUpdateDate, IFNULL(e.UpdateDate, m.LastUpdateDate)) AS MaxUpdateDate
+   GREATEST(m.LastUpdateDate, e.UpdateDate) AS MaxUpdateDate
 FROM All_MoneyIn m
 LEFT JOIN Latest_Extended e ON m.TransactionID = e.TransactionID;
 
